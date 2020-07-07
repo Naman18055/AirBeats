@@ -374,7 +374,6 @@ int Mario_Notes[] = {
   };
   
   int num_elements_in_arr = sizeof(Mario_Notes)/sizeof(Mario_Notes[0]);
-  Serial.println("I AM HERE BITCHES");
   for (int thisNote = 0; thisNote < num_elements_in_arr && digitalRead(13)==HIGH; thisNote++) {
      Serial.println("loop works");
     // to calculate the note duration, take one second

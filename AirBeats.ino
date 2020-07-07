@@ -397,7 +397,7 @@ void setTone(int pin, int note, int duration) {
   noTone(pin);
 }
 
-void playTheShit(char note, int duration) {
+void playTune(char note, int duration) {
   int buzzerPin = 6;
   char notesName[] = { 'c', 'd', 'e', 'f', 'g' };
   int tones[] = { 261, 293, 329, 349, 392 };
@@ -425,7 +425,7 @@ int duration[] = {1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
       // If find a space it rests
       delay(duration[i] * tempo);
     } else {
-      playTheShit(notes[i], duration[i] * tempo);
+      playTune(notes[i], duration[i] * tempo);
     }
 
     // Pauses between notes
